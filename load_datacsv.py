@@ -2,13 +2,13 @@ import pandas as pd
 import cv2
 import numpy as np
 
-image_size=(90, 90)
-dataset_path=''
+image_size=(48, 48)
+dataset_path='/Users/macos/Downloads/training_dataset.csv'
 
 def load_data(dataset_path):
     data = pd.read_csv(dataset_path)
     pixels = data['pixels'].tolist()
-    width, height = 90, 90
+    width, height = 48, 48
     faces = []
     for pixel_sequence in pixels:
         face = [int(pixel) for pixel in pixel_sequence.split(' ')]
