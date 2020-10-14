@@ -5,3 +5,6 @@ https://medium.com/difference-engine-ai/keras-a-thing-you-should-know-about-kera
 
 #how to use .fit and .fit_generator
 https://www.pyimagesearch.com/2018/12/24/how-to-use-keras-fit-and-fit_generator-a-hands-on-tutorial/
+
+#learn about optimizer
+https://viblo.asia/p/lam-quen-voi-keras-gGJ59mxJ5X2
