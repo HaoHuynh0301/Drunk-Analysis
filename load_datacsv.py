@@ -2,9 +2,8 @@ import pandas as pd
 import cv2
 import numpy as np
 
-image_size=(48, 48)
-dataset_path='/Users/macos/Downloads/training_dataset.csv'
-
+#define_functions
+image_size=(48,48)
 def load_data(dataset_path):
     data = pd.read_csv(dataset_path)
     pixels = data['pixels'].tolist()
@@ -27,3 +26,10 @@ def preprocess_input(x, v2=True):
         x = x - 0.5
         x = x * 2.0
     return x
+
+def read_data(drunkfile, normalfile):
+    drunk = pd.read_csv(drunkfile)
+    normal = pd.read_csv(normalfile)
+    data = pd.concat([drunk, normal])
+    ans_list = [1] * len(drunk) + [0] * len(normal)
+    return np.array(data[['smile','anger','contempt','disgust','fear','happiness','neutral','sadness','surprise','eyeOccluded']].values), np.array(ans_list)
