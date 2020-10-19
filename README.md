@@ -9,3 +9,6 @@ https://www.pyimagesearch.com/2018/12/24/how-to-use-keras-fit-and-fit_generator-
 #learn about optimizer, loss_function
 https://viblo.asia/p/lam-quen-voi-keras-gGJ59mxJ5X2,
 https://thorpham.github.io/blog/2018/05/25/keras/
+
+#overfitting, underfitting
+https://machinelearningcoban.com/2017/03/04/overfitting/
